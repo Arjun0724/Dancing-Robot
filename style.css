@@ -1,0 +1,158 @@
+.main{
+    border: 3px solid black;
+    height: 500px;
+    margin-top: 20px;
+    background: #5899e2;
+}
+
+.main:hover{
+    animation: changecolor 1s 0.1s infinite;
+}
+
+@keyframes changecolor{
+    0%{
+       background: white; 
+    }
+    25%{
+        background: blue;
+    }
+    50%{
+        background: red;
+    }
+    75%{
+        background: yellow;
+    }
+    100%{
+        background: pink;
+    }
+}
+.face{
+    background: chartreuse;
+    height: 150px;
+    width: 150px;
+    margin:auto;
+    border-radius: 50% 50% 0 0;
+    margin-top: 20px;
+}
+
+.main:hover .face{
+    transition: width 1s ease-in-out;
+    transform: scale(1.2);
+    animation: moveface 1s 0.1s infinite;
+}
+
+@keyframes moveface{
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        width:175px;
+        border-radius: 50%;
+    }
+    100%{
+        width: 150px;
+    }
+
+}
+
+.eye{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.r,.l{
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    width:250px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+
+.larm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+
+.main:hover .larm{
+    transform: rotate(90deg);
+}
+
+
+.center{
+    height:150px;
+    width: 150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+}
+
+.main:hover .center{
+    transition: width 1s;
+    transform: scale(1.2);
+    animation: movecenter 1s 0.1s infinite;
+}
+
+@keyframes movecenter{
+    0%{
+        width: 200px;
+        border-radius: 50%;
+    }
+    50%{
+        width: 200px;
+        border-radius: 50%;
+    }
+    100%{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+}
+
+.rarm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+.main:hover .rarm{
+    transform: rotate(90deg);
+}
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width:150px;
+    margin: auto;
+    margin-top: -20px;
+
+}
+
+.ll,.rl{
+    height:75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+/*.face:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.body:hover{
+    height: 200px;
+    width:200px;
+}*/
